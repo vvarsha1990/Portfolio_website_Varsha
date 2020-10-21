@@ -1,0 +1,145 @@
+/*
+Colors used:
+Primary color: #000000
+Secondary color: #ffc0cb
+Highlights: #ff5668
+Base Background color: White #FFFFFF
+Base font color: Black #000000
+
+Font family: Roboto condensed
+Font family: Sansita swashed
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 3.0em;
+  font-weight: 700;
+  color: #000000;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 700;
+  color: #000000;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff5668;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #ffc0cb;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited { /* visited link */
+  color: #ff5668;
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+a:hover,
+a:focus {
+  color: #ffc0cb;
+  text-decoration: underline;
+}
+.button {
+  display: inline-block;
+  background-color: #ffe3e7;
+  color: #ff5668;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; 
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff5668;
+  text-transform: uppercase;
+  border: 2px solid #ff5668;
+}
+.button.contact:hover {
+  background-color: #ff5668;
+  color: #ffffff;
+}
+.resume {
+  background-color: transparent;
+  color: #ff5668;
+  text-transform: uppercase;
+  border: 2px solid #ff5668;
+}
+.resume:hover {
+  background-color: #ff5668;
+  color: #ffffff;
+}
+img.profilepic {
+  min-width: 250px;
+  max-width: 150px;
+}
+img.ucan {
+  min-width: 400px;
+  max-width: 200px;
+}
+.logo {
+  min-width: 250px;
+  max-width: 150px;
+}
+img.research {
+  min-width: 400px;
+  max-width: 200px;
+}
+img.swot {
+  min-width: 400px;
+  max-width: 200px;
+}
+img.persona {
+  min-width: 600px;
+  max-width: 300px;
+}
+img.sitemap {
+  min-width: 500px;
+  max-width: 700px;
+}
+img.wireframe {
+  min-width: 400px;
+  max-width: 200px;
+}
+img.design {
+  min-width: 400px;
+  max-width: 200px;
+}
+img.final.design {
+  min-width: 400px;
+  max-width: 200px;
+}
