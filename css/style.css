@@ -13,6 +13,24 @@ Font family: Sansita swashed
 * {
   box-sizing: border-box;
 }
+/*layout styling*/
+.container {
+  padding: 0 15px;
+}
+
+header {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+nav > ul >  a {
+  padding: 0 15px 0 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+}
 
 body {
   background-color: #ffffff;
@@ -25,6 +43,7 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 3.0em;
   font-weight: 700;
@@ -45,14 +64,46 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#hero h1, p {
+  text-align: center; /* Centers text */
+  color: #ffffff;
+}
+#hero {
+  background-color: #000000;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.75);
+}
+#work p {
+  text-align: left;
+  color: #000000;
+}
+#about p {
+  text-align: left;
+  color: #000000;
+}
+#footer {
+  background-color: #000000;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.75);
+}
+#footer h2, p {
+  text-align: left;
+  color: #ffffff;
+}
 img {
   width: 100%;
 }
 
 a {
   color: #ff5668;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
 }
 a:hover {
   color: #ffc0cb;
@@ -80,7 +131,7 @@ a:focus {
   transition: 0.2s opacity;
 }
 .button:hover {
-  opacity: 0.8; 
+  opacity: 0.8;
   text-decoration: none;
 }
 .button.contact {
@@ -110,6 +161,13 @@ img.profilepic {
 img.ucan {
   min-width: 400px;
   max-width: 200px;
+
+}
+img.ucan1 {
+  min-width: 400px;
+  max-width: 200px;
+  padding: 15px;
+  float: left;
 }
 .logo {
   min-width: 250px;
