@@ -71,12 +71,22 @@ h4 {
   text-align: center; /* Centers text */
   color: #ffffff;
 }
+#hero span {
+  display: block;
+}
 #hero {
   background-color: #000000;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.75);
+}
+#work {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+
 }
 #work p {
   text-align: left;
@@ -120,6 +130,7 @@ a:focus {
   color: #ffc0cb;
   text-decoration: underline;
 }
+
 .button {
   display: inline-block;
   background-color: #ffe3e7;
@@ -129,6 +140,8 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 .button:hover {
   opacity: 0.8;
@@ -154,6 +167,11 @@ a:focus {
   background-color: #ff5668;
   color: #ffffff;
 }
+.row1 {
+  width 100%;
+  max-width 100%;
+  height: auto;
+}
 img.profilepic {
   min-width: 250px;
   max-width: 150px;
@@ -161,7 +179,10 @@ img.profilepic {
 img.ucan {
   min-width: 400px;
   max-width: 200px;
-
+}
+img.DD {
+  min-width: 300px;
+  max-width: 200px;
 }
 img.ucan1 {
   min-width: 400px;
@@ -200,4 +221,67 @@ img.design {
 img.final.design {
   min-width: 400px;
   max-width: 200px;
+}
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+nav {
+    width: auto;
+    float: right
+    margin-top: 4px;
+  }
+  .col-md-6 {
+  width: 50%;
+  float: left;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .col-md-6 {
+  width: 50%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+@media only screen and (min-width: 1440px) {
+  .col-md-6 {
+  width: 50%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+@media only screen and (min-width: 1920px) {
+  .col-md-6 {
+  width: 50%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
