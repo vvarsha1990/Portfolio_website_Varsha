@@ -19,7 +19,7 @@ Font family: Sansita swashed
 }
 
 header {
-  background-color: #ffe7e7;
+  background-color: #fff4f4;
   padding: 10px;
   position: relative;
   width: 100%;
@@ -28,7 +28,14 @@ header {
 }
 .nav {
   display: block;
+}
 
+#navtoggle ul, li {
+  text-align: left;
+  color: #000000;
+  display: block;
+  float: right;
+  list-style-type: none;
 }
 .toggle{
   position: relative;
@@ -42,6 +49,13 @@ header {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+a {
+    color: #130f3a;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
+}
 nav > ul  {
   padding:  15px 15px 15px 0;
   text-transform: uppercase;
@@ -53,8 +67,8 @@ nav > ul  {
 }
 
 body {
-  background-color: #ffe7e7;
-  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #fff4f4;
+  font-family: 'Antic Didone', serif;
   font-size: 16px;
   line-height: 1.6;
   color: #000000;
@@ -96,29 +110,30 @@ h4 {
   display: block;
 }
 #hero {
-  background-color: #ffe7e7;
-  padding: 20px 0;
+  background-color: #fff4f4;
+  padding: 20px 0 20px 0;
   display: block;
   width: 100%;
 
 }
 #work {
-  background-color: #ffe7e7;
+  background-color: #fff4f4;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-
 }
 #work p {
   text-align: left;
   color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
 }
-#about p {
+#about p, li {
   text-align: left;
   color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 #footer {
-  background-color: #ffe7e7;
+  background-color: #fff4f4;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -189,61 +204,16 @@ a:focus {
   color: #ffffff;
 }
 .row1 {
-  width 100%;
-  max-width 100%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
 }
-img.profilepic {
-  min-width: 250px;
-  max-width: 150px;
-}
-img.ucan {
-  min-width: 400px;
-  max-width: 200px;
-}
-img.DD {
-  min-width: 300px;
-  max-width: 200px;
-}
-img.ucan1 {
-  min-width: 400px;
-  max-width: 200px;
-  padding: 15px;
-  float: left;
-}
+
 .logo {
-  max-width: 150px;
   box-shadow: none;
   border-radius: 0px;
 }
-img.research {
-  min-width: 400px;
-  max-width: 200px;
-}
-img.swot {
-  min-width: 400px;
-  max-width: 200px;
-}
-img.persona {
-  min-width: 600px;
-  max-width: 300px;
-}
-img.sitemap {
-  min-width: 500px;
-  max-width: 700px;
-}
-img.wireframe {
-  min-width: 400px;
-  max-width: 200px;
-}
-img.design {
-  min-width: 400px;
-  max-width: 200px;
-}
-img.final.design {
-  min-width: 400px;
-  max-width: 200px;
-}
+
 [class*="col-"] {
   float: left;
   padding: 5px;
