@@ -15,7 +15,7 @@ Font family: Sansita swashed
 }
 /*layout styling*/
 .container {
-  padding: 0 0px;
+  padding: 0 15px;
 }
 
 header {
@@ -27,18 +27,23 @@ header {
   left: 0;
 }
 .nav {
-  display: block;
+  display: inline-block;
+  float: right;
+  margin-top: 50px;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 #navtoggle ul, li {
   text-align: left;
   color: #000000;
-  display: block;
+  display: inline-block;
   float: right;
   list-style-type: none;
 }
 .toggle{
   position: relative;
+  display: inline-block;
 }
 .ul {
     display: block;
@@ -116,16 +121,83 @@ h4 {
   width: 100%;
 
 }
-#work {
+#work  {
   background-color: #fff4f4;
-  padding: 20px 0;
-  display: inline-block;
+  padding: 0 10px;
+  display: block;
   width: 100%;
 }
+#work h3  {
+    font-family: 'Antic Didone', serif;
+    line-height: 1.4;
+    margin: 0px;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: right;
+    color: #000000;
+}
 #work p {
+  text-align: right;
+  color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#work2  {
+  background-color: #fff4f4;
+  padding: 0 10px;
+  display: block;
+  width: 100%;
+}
+#work2 h3  {
+    font-family: 'Antic Didone', serif;
+    line-height: 1.4;
+    margin: 0px;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: left;
+    color: #000000;
+}
+#work2 p {
   text-align: left;
   color: #000000;
   font-family: 'Nanum Gothic', sans-serif;
+  margin: 0px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#work3  {
+  background-color: #fff4f4;
+  padding: 0 10px;
+  display: block;
+  width: 100%;
+}
+#work3 h3  {
+    font-family: 'Antic Didone', serif;
+    line-height: 1.4;
+    margin: 0px;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: right;
+    color: #000000;
+}
+#work3 p {
+  text-align: right;
+  color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0px;
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 #about p, li {
   text-align: left;
@@ -134,10 +206,10 @@ h4 {
 }
 #footer {
   background-color: #fff4f4;
-  padding: 20px 0;
   display: inline-block;
   width: 100%;
-  box-shadow: 11px 11px 15px 0px rgba(50, 50, 50, 0.75);
+  text-align: left;
+  color: #000000;
 }
 #footer h2, p {
   text-align: left;
@@ -145,6 +217,8 @@ h4 {
 }
 img {
   width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
 }
 
 a {
@@ -152,36 +226,77 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ffc0cb;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #ff5353;
+  text-decoration: underline;/* Underlining when hovering over a link */
 }
 a:visited { /* visited link */
-  color: #ff5668;
+  color: #ff5353;
 }
 a:active { /* selected link */
   color: #994c30;
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #ffc0cb;
   text-decoration: underline;
+  color: #df4747;
+  font-size: 20px;
 }
-
+b {
+  color: #ff5668;
+  text-decoration: none;
+}
+b:hover {
+  color: #ff5353;
+  text-decoration: underline;/* Underlining when hovering over a link */
+}
+b:visited { /* visited link */
+  color: #ff5353;
+}
+b:active { /* selected link */
+  color: #994c30;
+}
+b:hover, b:focus {
+  color: #ffc0cb;
+  text-decoration: underline;
+  color: #df4747;
+}
+.ucan {
+  transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
 .button {
   display: inline-block;
-  background-color: #ffe3e7;
   color: #ff5668;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  font-size: 20px;
   transition: 0.2s opacity;
   transition-duration: 0.2s;
   transition-property: opacity;
+  margin-left: 380px;
+  margin-top: 10px;
 }
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.button1 {
+  display: inline-block;
+  color: #ff5668;
+  font-size: 20px;
+  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  text-align: left;
+  padding: 0 15px;
+}
+.button1:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 20px;
+  text-decoration: underline;
 }
 .button.contact {
   background-color: transparent;
@@ -210,18 +325,53 @@ a:focus {
 }
 
 .logo {
+  max-width: 250px;
   box-shadow: none;
   border-radius: 0px;
 }
-
+.profilepic {
+    width: 100%;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: none;
+}
 [class*="col-"] {
   float: left;
-  padding: 5px;
+  padding: 10px 10px 10px 10px;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
+}
+@keyframes color-change {
+  from {fill: #A7D9FF;}
+  to {fill: #005da3;}
+}
+#sky {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+
+@keyframes cloud-move-right {
+  from {transform: translate(0,50px);}
+  to {transform: translate(100px,50px);}
+}
+#cloud1 {
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: cloud-move-right;
+}
 }
 @media only screen and (min-width: 640px) {
 header {
@@ -242,6 +392,15 @@ nav {
 .col-md-6 {
   width: 50%;
   float: left;
+  padding: 0 10px;
+}
+.col-lg-5{
+  width: 100%;
+  float: right;
+}
+.col-lg-7{
+  width: 100%;
+  float: right;
 }
 [class*="col-"] {
   float: left;
@@ -252,6 +411,20 @@ nav {
   clear: both;
   display: table;
 }
+.profilepic {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    box-shadow: none;
+}
+.text_left {
+  text-align: left;
+}
+.text_right {
+  text-align: right;
+}
+
 }
 @media only screen and (min-width: 1024px) {
   .col-md-6 {
