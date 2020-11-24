@@ -19,10 +19,9 @@ Font family: Sansita swashed
   border-width: medium;
   border-color: #ffffff;
 }
-
 header {
   background-color: #fff4f4;
-  padding: 20px;
+  padding: 20px 0;
   border-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -45,7 +44,6 @@ header {
   color: #000000;
   display: inline-block;
   list-style-type: circle;
-  font-weight: bold;
 }
 .toggle{
   position: relative;
@@ -71,7 +69,7 @@ a {
     padding-right: 10px;
     letter-spacing: 0.235px;
 }
-nav > ul   {
+nav > ul  {
   padding:  15px 15px 15px 0;
   text-transform: uppercase;
   text-align: center;
@@ -80,29 +78,7 @@ nav > ul   {
   float: left;
   list-style-type: none;
 }
-.nav li:not(:last-child) {
-  display: none;
-}
-.nav.responsive nav {
-  padding: 10px 0 0;
-}
-.nav.responsive li  {
-  display: block;
-  padding: 10px 0;
-}
-.nav.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-.nav, .nav.responsive {
-  position: relative;
-}
-.nav li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
+
 body {
   background-color: #fff4f4;
   font-family: 'Antic Didone', serif;
@@ -110,9 +86,8 @@ body {
   line-height: 1.6;
   color: #000000;
   border-color: #000000;
-  padding: 10px;
-  margin: 10px;
   box-sizing: border-box;
+  padding: 20px 0;
 }
 
 h1, h2, h3, h4 {
@@ -128,6 +103,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  color: #b2065d;
 }
 
 h3 {
@@ -142,9 +118,35 @@ h4 {
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
 }
-#hero h1, p {
-  text-align: center; /* Centers text */
+.section1 {
+  border-bottom: 3px solid #b2065d;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.title h1 {
+  color: #b2065d;
+  background-color: #fff4f4;
+}
+.casestudy p{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.casestudy h2{
+  color: #b2065d;
+}
+.casestudy {
+  margin-bottom: 250px;
+}
+#project {
+  margin-top: 80px;
+}
+#project p, ul, li {
+  text-align: left;
   color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+#hero h1, {
+  text-align: center; /* Centers text */
+  color: #ff5668;
   display: inline-block;
 }
 #hero span {
@@ -155,145 +157,6 @@ h4 {
   padding: 150px 0 20px 0;
   display: inline-block;
   width: 100%;
-}
-#hero1 {
-  background-color: #fff4f4;
-  padding: 150px 0 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-#work  {
-  background-color: #fff4f4;
-  padding:10px;
-  display: block;
-  width: 100%;
-}
-#work h3  {
-    font-family: 'Antic Didone', serif;
-    line-height: 1.4;
-    margin: 0px;
-    font-size: 3.5em;
-    font-weight: 700;
-    text-align: right;
-    color: #000000;
-}
-#work p {
-  text-align: right;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
-  display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-#work2  {
-  background-color: #fff4f4;
-  padding: 0 10px;
-  display: block;
-  width: 100%;
-}
-#work2 h3  {
-    font-family: 'Antic Didone', serif;
-    line-height: 1.4;
-    margin: 0px;
-    font-size: 2.5em;
-    font-weight: normal;
-    text-align: left;
-    color: #000000;
-}
-#work2 p {
-  text-align: left;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
-  display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-#work3  {
-  background-color: #fff4f4;
-  padding: 0 10px;
-  display: block;
-  width: 100%;
-}
-#work3 h3  {
-    font-family: 'Antic Didone', serif;
-    line-height: 1.4;
-    margin: 0px;
-    font-size: 3.5em;
-    font-weight: 700;
-    text-align: right;
-    color: #000000;
-}
-#work3 p {
-  text-align: right;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
-  display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-#work4  {
-  background-color: #fff4f4;
-  padding: 0 10px;
-  display: block;
-  width: 100%;
-}
-#work4 h3  {
-    font-family: 'Antic Didone', serif;
-    line-height: 1.4;
-    margin: 0px;
-    font-size: 2.5em;
-    font-weight: normal;
-    text-align: left;
-    color: #000000;
-}
-#work4 p {
-  text-align: left;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
-  display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.pic {
-  padding-left: 40px;
-}
-.pic1 {
-  padding-left: 40px;
-}
-#about p, ul, li {
-  text-align: left;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-}
-#skillset {
-  text-align: left;
-  color: #000000;
-  font-family: 'Antic Didone', serif;
-  padding-top: 40px;
-}
-#skillset h2 {
-  text-align: left;
-  color: #000000;
-  font-family: 'Antic Didone', serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-#Layer_1 {
-  max-width: 400px;
 }
 #footer {
   background-color: #fff4f4;
@@ -339,41 +202,14 @@ a:hover, a:focus {
   font-size: 20px;
   font-weight: bold;
 }
-b {
-  color: #ff5668;
-  text-decoration: none;
-}
-b:hover {
-  color: #ff5353;
-}
-b:visited { /* visited link */
-  color: #ff5353;
-}
-b:active { /* selected link */
-  color: #994c30;
-}
-b:hover, b:focus {
-  color: #ffc0cb;
-  color: #df4747;
-}
 img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
 }
-.ucan {
-      transition: all .7s
-      transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 0s;
-  }
-.DD {
-    transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 0s;
-      float:right;
-    }
+.img2 {
+  box-shadow: none;
+}
 .button {
   display: inline-block;
   color: #ff5668;
@@ -441,14 +277,8 @@ img {
   background-color: #ff5668;
   color: #ffffff;
 }
-.row1 {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 .logo {
-  max-width: 150px;
+  max-width: 120px;
   box-shadow: none;
   border-radius: 0px;
 }
@@ -468,70 +298,34 @@ img {
   clear: both;
   display: table;
 }
-@keyframes color-change {
-  from {fill: #A7D9FF;}
-  to {fill: #005da3;}
-}
-#sky {
-  animation-duration: 5s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move-right {
-  from {transform: translate(0,50px);}
-  to {transform: translate(100px,50px);}
-}
-#cloud1 {
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: cloud-move-right;
-}
-}
 @media only screen and (min-width: 640px) {
   body {
     padding: 20px 0;
     border-left: 20px solid #FFFFFF;
     border-right: 20px solid #FFFFFF;
     border-top: 20px solid #FFFFFF;
+    border-bottom: 20px solid #FFFFFF;
   }
+  main {
+    padding: 20px 0;
 
+  }
 header {
-  text-align: unset;
-  padding: 20px 0;
-  padding: 20px 0;
-  border-left: 20px solid #FFFFFF;
-  border-right: 20px solid #FFFFFF;
-  border-top: 20px solid #FFFFFF;
+      text-align: unset;
+      padding: 20px 0;
+      border-left: 20px solid #FFFFFF;
+      border-right: 20px solid #FFFFFF;
+      border-top: 20px solid #FFFFFF;
 }
-
 nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul > li {
-  display: inline-block;
-}
   nav > ul{
     margin: 1em 0;
   }
-  .nav li:not(:last-child) {
-  display: inline-block;
-}
-.nav li:last-child {
-  display: none;
-}
-.logo{
-    max-width: 120px;
-    min-width: 641px;
-  }
+
 .col-md-6 {
   width: 50%;
   float: left;
@@ -566,8 +360,6 @@ nav {
 }
 .text_right {
   text-align: right;
-}
-
 }
 @media only screen and (min-width: 1024px) {
   .col-md-6 {
