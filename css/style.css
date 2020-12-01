@@ -32,24 +32,12 @@ header {
   display: block;
   margin: 0;
 }
-.nav {
+.navigating {
   display: inline-block;
   float: right;
   margin-top: 15px;
   font-weight: 300;
   font-size: 20px;
-}
-
-#navtoggle ul, li {
-  text-align: left;
-  color: #000000;
-  display: inline-block;
-  list-style-type: circle;
-  font-weight: bold;
-}
-.toggle{
-  position: relative;
-  display: inline-block;
 }
 .ul {
     display: block;
@@ -60,48 +48,54 @@ header {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}
-a {
-    color: #130f3a;
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    letter-spacing: 0.235px;
-}
-nav > ul   {
-  padding:  15px 15px 15px 0;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 400;
-  display: inline-block;
-  float: left;
+nav > ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
 }
-.nav li:not(:last-child) {
+.navtoggle li:not(:last-child) {
   display: none;
 }
-.nav.responsive nav {
-  padding: 10px 0 0;
-}
-.nav.responsive li  {
-  display: block;
-  padding: 10px 0;
-}
-.nav.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-.nav, .nav.responsive {
+
+.navtoggle, .navtoggle.responsive {
   position: relative;
 }
-.nav li .icon {
-  position: absolute;
+.navtoggle li .icon {
+  position: relative;
   right: 0;
   top: 2px;
   font-size: 20px;
   padding-right: 0;
+}
+.navtoggle.responsive nav {
+    padding: 25px 0 0;
+}
+
+.navtoggle.responsive li{
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ff4242;
+}
+#overview .row {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
 }
 body {
   background-color: #fff4f4;
@@ -318,10 +312,13 @@ h4 {
   color: #000000;
   font-family: 'Antic Didone', serif;
 }
-
 a {
-  color: #ff5668;
-  text-decoration: none;
+    color: #130f3a;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
+    text-transform: uppercase;
 }
 a:hover {
   color: #ff5353;
@@ -338,6 +335,7 @@ a:hover, a:focus {
   color: #df4747;
   font-size: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 b {
   color: #ff5668;
@@ -514,18 +512,18 @@ header {
 nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
+  nav > ul {
+  margin: 1em 0;
+}
   nav > ul > li {
-  display: inline-block;
-}
-  nav > ul{
-    margin: 1em 0;
+    display: inline-block;
   }
-  .nav li:not(:last-child) {
+
+.navtoggle li:not(:last-child) {
   display: inline-block;
 }
-.nav li:last-child {
+.navtoggle li:last-child {
   display: none;
 }
 .logo{
