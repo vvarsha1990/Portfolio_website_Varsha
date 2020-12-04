@@ -19,9 +19,13 @@ Font family: Sansita swashed
   border-width: medium;
   border-color: #ffffff;
 }
-
-header {
+main {
+  padding-top: 65px;
+  display: block;
   background-color: #fff4f4;
+}
+header {
+  background-color: rgba(255, 245, 243, 0.9);
   padding: 20px;
   border-color: #ffffff;
   position: fixed;
@@ -98,7 +102,6 @@ nav > ul > li > a {
     margin: 0;
 }
 body {
-  background-color: #fff4f4;
   font-family: 'Antic Didone', serif;
   font-size: 16px;
   line-height: 1.6;
@@ -107,6 +110,7 @@ body {
   padding: 10px;
   margin: 10px;
   box-sizing: border-box;
+  background: rgba(255, 245, 243, 0.9);
 }
 
 h1, h2, h3, h4 {
@@ -146,7 +150,7 @@ h4 {
 }
 #hero {
   background-color: #fff4f4;
-  padding: 150px 0 20px 0;
+  padding: 15px 0 15px 15px;
   display: inline-block;
   width: 100%;
 }
@@ -261,10 +265,18 @@ h4 {
     margin-inline-end: 0px;
 }
 .pic {
-  padding-left: 40px;
+  padding: 30px;
+box-shadow: 3px 9px 23px 4px rgba(0,0,0,0.71);
+border-radius: 20px;
+
 }
 .pic1 {
   padding-left: 40px;
+}
+.picture {
+  min-width: 250px;
+  border-radius: none;
+  box-shadow: none;
 }
 #about p, ul, li {
   text-align: left;
@@ -288,6 +300,19 @@ h4 {
 }
 #Layer_1 {
   max-width: 400px;
+}
+#contact p {
+  background-color: #fff4f4;
+  display: inline-block;
+  color: #000000;
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 10px;
+  text-align: left;
+  line-height: normal;
+}
+.contact1 {
+  padding-top: 15px;
+  margin-top: 10px;
 }
 #footer {
   background-color: #fff4f4;
@@ -318,7 +343,7 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     letter-spacing: 0.235px;
-    text-transform: uppercase;
+
 }
 a:hover {
   color: #ff5353;
@@ -333,16 +358,20 @@ a:active { /* selected link */
 a:hover, a:focus {
   color: #ffc0cb;
   color: #df4747;
-  font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
+
 }
 b {
   color: #ff5668;
   text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.235px;
+  text-transform: uppercase;
 }
 b:hover {
   color: #ff5353;
+  font-weight: bold;
 }
 b:visited { /* visited link */
   color: #ff5353;
@@ -353,14 +382,19 @@ b:active { /* selected link */
 b:hover, b:focus {
   color: #ffc0cb;
   color: #df4747;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
+
 img {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
 }
 .ucan {
-      transition: all .7s
+      transition: all .7s;
       transition-duration: 0.7s;
       transition-timing-function: ease-in-out;
       transition-delay: 0s;
@@ -491,8 +525,11 @@ img {
     animation-play-state: running;
     animation-name: cloud-move-right;
 }
-}
+
 @media only screen and (min-width: 640px) {
+  main {
+    padding-top: 99px;
+  }
   body {
     padding: 20px 0;
     border-left: 20px solid #FFFFFF;
@@ -528,7 +565,7 @@ nav {
 }
 .logo{
     max-width: 120px;
-    min-width: 641px;
+
   }
 .col-md-6 {
   width: 50%;
@@ -570,6 +607,9 @@ nav {
 @media only screen and (min-width: 1024px) {
   .col-md-6 {
   width: 50%;
+}
+.top_margin {
+    margin-top: 50px;
 }
 .container {
   max-width: 1200px;
