@@ -9,7 +9,9 @@ Base font color: Black #000000
 Font family: Roboto condensed
 Font family: Sansita swashed
 */
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -32,7 +34,7 @@ header {
   width: 100%;
   top: 0px;
   left: 0;
-  opacity: 0.8;
+
   display: block;
   margin: 0;
 }
@@ -108,9 +110,9 @@ body {
   color: #000000;
   border-color: #000000;
   padding: 10px;
-  margin: 10px;
+
   box-sizing: border-box;
-  background: rgba(255, 245, 243, 0.9);
+
 }
 
 h1, h2, h3, h4 {
@@ -264,6 +266,12 @@ h4 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.images_main{
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 200px;
+  max-height: 400px;
+}
 .pic {
   padding: 30px;
 box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
@@ -322,6 +330,8 @@ width: 75%;
   color: #000000;
   font-family: 'Nanum Gothic', sans-serif;
   padding: 10px;
+  margin-top: 10px;
+  border-top: #fff4f4;
 }
 .text_left{
   text-align: left;
@@ -338,7 +348,7 @@ width: 75%;
   font-family: 'Antic Didone', serif;
 }
 a {
-    color: #130f3a;
+    color: #ff5353;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -463,6 +473,7 @@ img {
   background-color: #ff5668;
   color: #ffffff;
 }
+
 .resume {
   background-color: transparent;
   color: #ff5668;
