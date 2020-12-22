@@ -7,4 +7,5 @@ function menuToggle() {
     x.className = 'navtoggle';
      $(".navtoggle nav").attr({style: ''});
   }
+
 }

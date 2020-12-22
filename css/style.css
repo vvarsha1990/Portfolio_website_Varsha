@@ -48,10 +48,8 @@ header {
 .ul {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
+
     padding-inline-start: 40px;
 }
 nav > ul {
@@ -141,6 +139,8 @@ h4 {
 }
 .row {
   margin: 10px 0; /* 25px top and bottom, 0 left and right */
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 #hero h1, p {
   text-align: center; /* Centers text */
@@ -171,7 +171,7 @@ h4 {
 #work h3  {
     font-family: 'Antic Didone', serif;
     line-height: 1.4;
-    margin: 0px;
+    margin: 0 0 15px 15px;
     font-size: 3.5em;
     font-weight: 700;
     text-align: right;
@@ -183,10 +183,7 @@ h4 {
   font-family: 'Nanum Gothic', sans-serif;
   margin: 0px;
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
 }
 #work2  {
   background-color: #fff4f4;
@@ -197,7 +194,7 @@ h4 {
 #work2 h3  {
     font-family: 'Antic Didone', serif;
     line-height: 1.4;
-    margin: 0px;
+    margin: 0 15px 15px 15px;
     font-size: 2.5em;
     font-weight: normal;
     text-align: left;
@@ -207,12 +204,9 @@ h4 {
   text-align: left;
   color: #000000;
   font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
+  margin: 15px;
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
 }
 #work3  {
   background-color: #fff4f4;
@@ -224,8 +218,8 @@ h4 {
     font-family: 'Antic Didone', serif;
     line-height: 1.4;
     margin: 0px;
-    font-size: 3.5em;
-    font-weight: 700;
+    font-size: 2.5em;
+    font-weight: normal;
     text-align: right;
     color: #000000;
 }
@@ -235,43 +229,9 @@ h4 {
   font-family: 'Nanum Gothic', sans-serif;
   margin: 0px;
   display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
-#work4  {
-  background-color: #fff4f4;
-  padding: 0 10px;
-  display: block;
-  width: 100%;
-}
-#work4 h3  {
-    font-family: 'Antic Didone', serif;
-    line-height: 1.4;
-    margin: 0px;
-    font-size: 2.5em;
-    font-weight: normal;
-    text-align: left;
-    color: #000000;
-}
-#work4 p {
-  text-align: left;
-  color: #000000;
-  font-family: 'Nanum Gothic', sans-serif;
-  margin: 0px;
-  display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-.images_main{
-  min-width: 400px;
-  max-width: 600px;
-  min-height: 200px;
-  max-height: 400px;
-}
+
+
 .pic {
   padding: 30px;
 box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
@@ -283,7 +243,7 @@ width: 75%;
 }
 .picture {
   min-width: 250px;
-  border-radius: none;
+  border-radius: 0;
   box-shadow: none;
 }
 #about p, ul, li {
@@ -301,10 +261,7 @@ width: 75%;
   text-align: left;
   color: #000000;
   font-family: 'Antic Didone', serif;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+
 }
 #Layer_1 {
   max-width: 400px;
@@ -348,7 +305,7 @@ width: 75%;
   font-family: 'Antic Didone', serif;
 }
 a {
-    color: #ff5353;
+    color: #ff5668;
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -356,11 +313,11 @@ a {
 
 }
 a:hover {
-  color: #ff5353;
+  color: #E50000;
   font-weight: bold;
 }
 a:visited { /* visited link */
-  color: #ff5353;
+  color: #ff5668;
 }
 a:active { /* selected link */
   color: #994c30;
@@ -369,62 +326,33 @@ a:hover, a:focus {
   color: #ffc0cb;
   color: #df4747;
   font-weight: bold;
-
-}
-b {
-  color: #ff5668;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  letter-spacing: 0.235px;
-  text-transform: uppercase;
-}
-b:hover {
-  color: #ff5353;
-  font-weight: bold;
-}
-b:visited { /* visited link */
-  color: #ff5353;
-}
-b:active { /* selected link */
-  color: #994c30;
-}
-b:hover, b:focus {
-  color: #ffc0cb;
-  color: #df4747;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 
 img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 19px 1px rgba(0,0,0,0.49);
 }
-.ucan {
-      transition: all .7s;
-      transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 0s;
-  }
-.DD {
-    transition-property: all;
-      transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 0s;
-      float:right;
-    }
+.images_main{
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 200px;
+  max-height: 400px;
+  box-shadow: 3px 3px 19px 1px rgba(0,0,0,0.49);
+}
+.center {
+  text-align: right;
+}
 .button {
-  display: inline-block;
   color: #ff5668;
   font-size: 20px;
-  transition: 0.2s opacity;
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  margin-left: 380px;
-  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  padding-top: 30px;
 }
 .button:hover {
   opacity: 0.8;
@@ -473,17 +401,25 @@ img {
   background-color: #ff5668;
   color: #ffffff;
 }
+.button3 {
+  display: block;
+  color: #E50000;
+  background-color: #fff4f4;
+  border-radius: 12px;
+  border-width: thin;
+  font-size: 20px;
+  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+padding: 10px;
 
-.resume {
-  background-color: transparent;
-  color: #ff5668;
-  text-transform: uppercase;
-  border: 2px solid #ff5668;
 }
-.resume:hover {
-  background-color: #ff5668;
-  color: #ffffff;
+.button3:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 20px;
 }
+
 .row1 {
   width: 100%;
   max-width: 100%;
@@ -551,7 +487,7 @@ img {
 header {
   text-align: unset;
   padding: 20px 0;
-  padding: 20px 0;
+
   border-left: 20px solid #FFFFFF;
   border-right: 20px solid #FFFFFF;
   border-top: 20px solid #FFFFFF;
@@ -594,6 +530,10 @@ nav {
 [class*="col-"] {
   float: left;
   padding: 10px;
+}
+.row{
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .row::after {
   content: "";
