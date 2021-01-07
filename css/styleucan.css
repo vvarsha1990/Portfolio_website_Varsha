@@ -259,29 +259,26 @@ h4 {
 }
 
 a {
-  color: #ff5668;
-  text-decoration: none;
-}
+    color: #ff5668;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 0.235px;
 
+}
 a:hover {
-  color: #ff5353;
+  color: #E50000;
   font-weight: bold;
 }
-
-a:visited {
-  /* visited link */
-  color: #ff5353;
+a:visited { /* visited link */
+  color: #ff5668;
 }
-
-a:active {
-  /* selected link */
+a:active { /* selected link */
   color: #994c30;
 }
-
 a:hover, a:focus {
   color: #ffc0cb;
   color: #df4747;
-  font-size: 20px;
   font-weight: bold;
 }
 

@@ -117,6 +117,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+
   font-size: 3.0em;
   font-weight: 700;
   color: #000000;
@@ -142,7 +143,7 @@ h4 {
   padding-bottom: 25px;
 }
 #hero h1, p {
-  text-align: center; /* Centers text */
+  text-align: justify;
   color: #000000;
   display: inline-block;
 }
@@ -230,25 +231,23 @@ h4 {
   display: block;
 }
 
-
 .pic {
   padding: 30px;
 box-shadow: 0px 10px 37px -13px rgba(0,0,0,0.75);
 border-radius: 20px;
-width: 75%;
+width: 100%;
 }
-.pic1 {
-  padding-left: 40px;
-}
+
 .picture {
   min-width: 250px;
   border-radius: 0;
   box-shadow: none;
 }
 #about p, ul, li {
-  text-align: left;
+  text-align: justify;
   color: #000000;
   font-family: 'Nanum Gothic', sans-serif;
+  display:block;
 }
 #skillset {
   text-align: left;
@@ -334,9 +333,9 @@ img {
   box-shadow: 3px 3px 19px 1px rgba(0,0,0,0.49);
 }
 .images_main{
-  min-width: 400px;
+
   max-width: 600px;
-  min-height: 200px;
+
   max-height: 400px;
   box-shadow: 3px 3px 19px 1px rgba(0,0,0,0.49);
 }
@@ -426,7 +425,7 @@ padding: 10px;
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 75px;
   box-shadow: none;
   border-radius: 0px;
 }
@@ -511,7 +510,6 @@ nav {
 }
 .logo{
     max-width: 120px;
-
   }
 .col-md-6 {
   width: 50%;
@@ -561,11 +559,13 @@ nav {
 .top_margin {
     margin-top: 50px;
 }
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
+
 }
 @media only screen and (min-width: 1440px) {
   .col-md-6 {
